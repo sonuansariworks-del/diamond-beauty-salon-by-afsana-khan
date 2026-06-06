@@ -1,0 +1,573 @@
+/* =========================================================
+                    GOOGLE FONT
+========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* =========================================================
+                    RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff9fc;
+    color: #222;
+    overflow-x: hidden;
+}
+
+/* =========================================================
+                    GLOBAL
+========================================================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* =========================================================
+                    BUTTON
+========================================================= */
+
+.btn {
+    width: 100%;
+
+    padding: 18px;
+
+    border: none;
+    outline: none;
+
+    background: linear-gradient(135deg,
+            #ff3d7f,
+            #ff6fa5);
+
+    color: #fff;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================================================
+                    HEADER
+========================================================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 999;
+
+    background: #ffffff;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 34px;
+    font-weight: 800;
+    color: #c2bfbf;
+}
+
+.logo span {
+        color: #ff3d7f;
+
+}
+
+/* BACK BUTTON */
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px 25px;
+
+    background: #ff3d7f;
+    color: #fff;
+
+    border-radius: 50px;
+
+    font-weight: 600;
+
+    transition: 0.4s;
+}
+
+.back-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* =========================================================
+                    HERO SECTION
+========================================================= */
+
+.page-hero {
+    height: 550px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)),
+        url("/assets/images/form-hero.jpg") center/cover no-repeat;
+        /* background: url(/assets/images/form-hero.jpg); */
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.page-hero-content h1 {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.page-hero-content p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* =========================================================
+                    BOOKING PAGE
+========================================================= */
+
+.booking-page {
+    background: #fff7fb;
+}
+
+.booking-page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* LEFT */
+
+.section-subtitle {
+    color: #ff3d7f;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.booking-info h2 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.booking-info p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #666;
+}
+
+/* FEATURES */
+
+.booking-features {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.booking-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 22px;
+
+    background: #fff;
+
+    border-radius: 22px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+
+    transition: 0.4s;
+}
+
+.booking-feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.booking-feature-item i {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ff3d7f;
+    color: #fff;
+}
+
+/* =========================================================
+                    FORM
+========================================================= */
+
+.booking-form-box {
+    background: #fff;
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+}
+
+#bookingForm {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box label {
+    font-weight: 600;
+    color: #111;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea {
+    width: 100%;
+
+    padding: 17px 18px;
+
+    border: 1px solid #eee;
+    border-radius: 16px;
+
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+
+    background: #fafafa;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-box textarea {
+    resize: none;
+}
+
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus {
+    border-color: #ff3d7f;
+
+    background: #fff;
+
+    box-shadow: 0 0 0 4px rgba(255, 61, 127, 0.1);
+}
+
+/* =========================================================
+                    WORKING HOURS
+========================================================= */
+
+.working-hours {
+    background: #fff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.hours-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.hours-box {
+    background: #fff7fb;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    transition: 0.4s;
+}
+
+.hours-box:hover {
+    transform: translateY(-8px);
+}
+
+.hours-box h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.hours-box p {
+    font-size: 17px;
+    color: #666;
+}
+
+/* =========================================================
+                    ADDRESS
+========================================================= */
+
+.salon-address {
+    background: #fff7fb;
+}
+
+.address-box {
+    max-width: 750px;
+    margin: auto;
+
+    padding: 45px;
+
+    background: #fff;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.address-box i {
+    font-size: 50px;
+    color: #ff3d7f;
+
+    margin-bottom: 25px;
+}
+
+.address-box p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #555;
+}
+
+/* =========================================================
+                    FOOTER
+========================================================= */
+
+.footer {
+    background: #111;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.footer h3 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    max-width: 650px;
+    margin: auto;
+
+    line-height: 1.9;
+
+    color: #ccc;
+}
+
+.footer-contact {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-contact a {
+    color: #ff77a8;
+    font-weight: 600;
+}
+
+/* =========================================================
+                    RESPONSIVE
+========================================================= */
+
+@media(max-width:991px) {
+
+    .booking-page-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-info h2 {
+        font-size: 42px;
+    }
+
+    .hours-container {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero-content h1 {
+        font-size: 55px;
+    }
+
+    .section-title h2 {
+        font-size: 40px;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    section {
+        padding: 80px 0;
+    }
+
+    .header-container {
+        height: 80px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .back-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .page-hero {
+        height: 380px;
+    }
+
+    .page-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .page-hero-content p {
+        font-size: 16px;
+    }
+
+    .booking-info h2 {
+        font-size: 34px;
+    }
+
+    .booking-features {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form-box {
+        padding: 30px 22px;
+    }
+
+    .section-title h2 {
+        font-size: 34px;
+    }
+
+    .hours-box {
+        padding: 30px 20px;
+    }
+
+    .address-box {
+        padding: 30px 22px;
+    }
+
+    .footer h3 {
+        font-size: 28px;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .page-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .booking-info h2 {
+        font-size: 28px;
+    }
+
+    .input-box input,
+    .input-box select,
+    .input-box textarea {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}

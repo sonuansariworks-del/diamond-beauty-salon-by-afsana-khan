@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- META -->
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Book Appointment | Diamond Beauty Salon
+
+    </title>
+
+    <!-- FAVICON -->
+    <link rel="icon"
+        type="image/png"
+        href="assets/images/favicon-5.jpg">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+        href="assets/css/booking.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================================
+                            HEADER
+    ========================================================== -->
+    <header class="header">
+
+        <div class="container header-container">
+
+            <!-- LOGO -->
+            <a href="index.html"
+                class="logo">
+
+                Diamond <span>Beauty Salon</span>
+
+            </a>
+
+            <!-- BACK BUTTON -->
+            <a href="index.html"
+                class="back-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back
+
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- =========================================================
+                            HERO SECTION
+    ========================================================== -->
+    <section class="page-hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container page-hero-content">
+
+            <h1>
+
+                Book Your Appointment
+
+            </h1>
+
+            <p>
+
+                Luxury beauty booking for makeup,
+                facial, hair styling and skincare services.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================
+                            BOOKING SECTION
+    ========================================================== -->
+    <section class="booking-page">
+
+        <div class="container booking-page-container">
+
+            <!-- LEFT -->
+            <div class="booking-info">
+
+                <p class="section-subtitle">
+
+                    Appointment Booking
+
+                </p>
+
+                <h2>
+
+                    Luxury Beauty Services
+                    Just One Click Away
+
+                </h2>
+
+                <p>
+
+                    Book your appointment for bridal makeup,
+                    facial, hair styling, nail art and premium
+                    beauty care services.
+
+                </p>
+
+                <!-- FEATURES -->
+                <div class="booking-features">
+
+                    <div class="booking-feature-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+
+                            Professional Beauty Experts
+
+                        </span>
+
+                    </div>
+
+                    <div class="booking-feature-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+
+                            Premium Beauty Products
+
+                        </span>
+
+                    </div>
+
+                    <div class="booking-feature-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+
+                            Luxury Salon Environment
+
+                        </span>
+
+                    </div>
+
+                    <div class="booking-feature-item">
+
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+
+                            Easy Appointment Booking
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- FORM -->
+            <div class="booking-form-box">
+
+                <form id="bookingForm">
+
+                    <!-- NAME -->
+                    <div class="input-box">
+
+                        <label>
+
+                            Full Name
+
+                        </label>
+
+                        <input type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+                    <!-- PHONE -->
+                    <div class="input-box">
+
+                        <label>
+
+                            Phone Number
+
+                        </label>
+
+                        <input type="tel"
+                            id="phone"
+                            placeholder="Enter your phone number"
+                            required>
+
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="input-box">
+
+                        <label>
+
+                            Email Address
+
+                        </label>
+
+                        <input type="email"
+                            id="email"
+                            placeholder="Enter your email">
+
+                    </div>
+
+                    <!-- SERVICE -->
+                    <div class="input-box">
+
+                        <label>
+
+                            Select Service
+
+                        </label>
+
+                        <select id="service"
+                            required>
+
+                            <option value="">
+
+                                Choose Service
+
+                            </option>
+
+                            <option>
+
+                                Bridal Makeup
+
+                            </option>
+
+                            <option>
+
+                                Party Makeup
+
+                            </option>
+
+                            <option>
+
+                                Hair Styling
+
+                            </option>
+
+                            <option>
+
+                                Hair Spa
+
+                            </option>
+
+                            <option>
+
+                                Facial & Cleanup
+
+                            </option>
+
+                            <option>
+
+                                Nail Art
+
+                            </option>
+
+                            <option>
+
+                                Waxing
+
+                            </option>
+
+                            <option>
+
+                                Skin Care
+
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- DATE -->
+                    <div class="input-box">
+
+                        <label>
+
+                            Appointment Date
+
+                        </label>
+
+                        <input type="date"
+                            id="date"
+                            required>
+
+                    </div>
+
+                    <!-- TIME -->
+                    <div class="input-box">
+
+                        <label>
+
+                            Appointment Time
+
+                        </label>
+
+                        <input type="time"
+                            id="time"
+                            required>
+
+                    </div>
+
+                    <!-- MESSAGE -->
+                    <div class="input-box">
+
+                        <label>
+
+                            Additional Message
+
+                        </label>
+
+                        <textarea id="message"
+                            rows="5"
+                            placeholder="Write your message..."></textarea>
+
+                    </div>
+
+                    <!-- BUTTON -->
+                    <button type="submit"
+                        class="btn booking-btn">
+
+                        Book Appointment
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================
+                            WORKING HOURS
+    ========================================================== -->
+    <section class="working-hours">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Salon Working Hours
+
+                </h2>
+
+            </div>
+
+            <div class="hours-container">
+
+                <div class="hours-box">
+
+                    <h3>
+
+                        Monday - Friday
+
+                    </h3>
+
+                    <p>
+
+                        10:00 AM - 7:00 PM
+
+                    </p>
+
+                </div>
+
+                <div class="hours-box">
+
+                    <h3>
+
+                        Saturday
+
+                    </h3>
+
+                    <p>
+
+                        10:00 AM - 8:00 PM
+
+                    </p>
+
+                </div>
+
+                <div class="hours-box">
+
+                    <h3>
+
+                        Sunday
+
+                    </h3>
+
+                    <p>
+
+                        11:00 AM - 9:00 PM
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================
+                            ADDRESS
+    ========================================================== -->
+    <section class="salon-address">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>
+
+                    Salon Address
+
+                </h2>
+
+            </div>
+
+            <div class="address-box">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <p>
+
+                    Sonipat Bus Stand,
+                    Rohtak – Sonipat Road,
+                    Near Mansarover,
+                    Rohtak, Haryana
+
+                </p>
+                 <div class="contact-map">
+
+                <iframe src="https://www.google.com/maps?q=Rohtak&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+
+            </div>
+
+            </div>
+            
+
+        </div>
+
+    </section>
+
+    <!-- =========================================================
+                            FOOTER
+    ========================================================== -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <h3>
+
+                Diamond Beauty Salon
+
+            </h3>
+
+            <p>
+
+                Luxury beauty salon for bridal makeup,
+                facial, hair styling and skincare services.
+
+            </p>
+
+            <div class="footer-contact">
+
+                <a href="tel:+918053555265">
+                    +91 80535 55265
+                </a>
+                <a href="mailto:diamondbeautysalon@gmail.com">
+                    diamondbeautysalon@gmail.com
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/booking.js"></script>
+
+</body>
+
+</html>
