@@ -247,7 +247,7 @@ a {
     url("../images/hero-3.jpg");
 
     background-size: cover;
-    background-position: center;
+    background-position: top right;
     background-repeat: no-repeat;
 }
 
