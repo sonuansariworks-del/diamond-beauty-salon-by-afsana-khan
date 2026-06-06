@@ -234,17 +234,29 @@ a {
 /* =========================================================
                     HERO SECTION
 ========================================================= */
-.hero {
+.hero{
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     overflow: hidden;
+
     background:
-        url("../images/hero-3.jpg") center;
-    /* background:
-        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        url("../images/hero-3.jpg") center/cover no-repeat; */
+    linear-gradient(rgba(0,0,0,0.45),
+    rgba(0,0,0,0.45)),
+    url("../images/hero-3.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:768px){
+
+.hero{
+    background-position: 70% center;
+}
+
 }
 
 .hero-overlay {
