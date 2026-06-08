@@ -910,7 +910,8 @@ a {
     }
 
     .hero-content h1 {
-        font-size: 42px;
+        font-size: 32px;
+      line-height:1.2;
     }
 
     .section-title h2,
@@ -937,7 +938,7 @@ a {
 @media(max-width:500px) {
 
     .hero-content h1 {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     .hero-text {
